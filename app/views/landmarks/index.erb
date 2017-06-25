@@ -4,6 +4,10 @@
 	<title>Landmarks</title>
 </head>
 <body>
-
+<%Landmark.all.each do |landmark|%>
+<a href="/landmarks/<%=landmark.id%>"><%=landmark.name%></a>
+<p>completed <%=landmark.year_completed%></p>
+<br>
+<%end%>
 </body>
 </html>
